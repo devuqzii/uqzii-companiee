@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/Uqzii Companies (2).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Uqzii Companie</title>
+</head>
+<body>
+<header>
+    <a href="#" class="logo"><span>U</span>qzii Companie</a>
+    <div class=menutoggle onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu();">Acceuil</a></li>
+        <li><a href="#email" onclick="toggleMenu();">email</a></li>
+        <li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+        <li><a href="#services" onclick="toggleMenu();">Service</a></li>
+        <a href="#blog" class="btn-blog"onclick="toggleMenu();">Blog</a>
+    </ul>
+</header>
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2>Welcome</h2>
+        <p>Uqzii Companie crée en 2022 est une entreprise de technologie high tech crée par M. Uqzii</p>
+        <a href="#contact" class="btn1">Contact</a>
+        <a href="#apropos" class="btn2">A propos</a>
+    </div>
+</section>
+<section class="apropos" id="apropos"> 
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"><span>A</span> propos de nous</h2>
+            <p>Uqzii Companie, fondée en 2022 par M. Uqzii est une entreprise de technologie high tech spécialiser dans les robots et autre intelligence artificielle</p>
+        </div>
+        <div class="col50">
+            <div class="img">
+                <img src="./images/fiber-4814456_960_720.jpg" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="email" id="email">
+    <div class="titre">
+        <h2 class="titre-texte"><span>E</span>mail</h2>
+        <p>email: uqziicompanies@gmail.com</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/girl-791686_960_720.jpg" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services" id="services">
+    <div class="titre">
+        <h2 class="titre-texte"><span>S</span>ervices</h2>
+        <p>email: uqziicompanies@gmail.com</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/business-2846221_960_720.jpg" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog" id="blog">
+        <div class="titre blanc">
+            <h2 class="titre-texte"><span>B</span>log</h2>
+            <p>blog</p>
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/man-791049_960_720.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+</section>
+<section class="contact" id="contact">
+    <div class="titre noir">
+        <h2 class="titre-text"><span>C</span>ontactez nous</h2>
+        <p>Contactez nous ci-dessous</p>
+    </div>
+    <div class="contactform">
+        <h3>Envoyer un message</h3>
+        <div class="inputboite">
+            <input type="text" placeholder="Nom">
+        </div>
+        <div class="inputboite">
+            <input type="text" placeholder="email">
+        </div>
+        <div class="inputboite">
+            <textarea placeholder="message"></textarea>
+        </div>
+        <div class="inputboite">
+            <input type="submit" value="envoyer">
+        </div>
+    </div>
+</section>
+<div class="copyright">
+    <p>©2022 <a href="#">Dev.uqzii</a> technologie entreprise</p>
+</div>
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header =document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const toggleMenu = document.querySelector('.menutoggle');
+        const navbar = document.querySelector('navbar');
+        menutoggle.classList.toggle('active');
+        navbar.classList('active');
+    }
+</script>
+</body>
+</html>
